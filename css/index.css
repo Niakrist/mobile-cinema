@@ -119,12 +119,13 @@
   position: relative;
   max-width: 280px;
   margin: 0 auto;
+  min-height: 100%;
 }
 
 .films::before {
   content: '';
   position: absolute;
-  top: -50px;
+  top: 0px;
   left: -50px;
   width: 45px;
   min-height: 100%;
@@ -134,7 +135,7 @@
 .films::after {
   content: '';
   position: absolute;
-  top: -50px;
+  top: 0px;
   right: -50px;
   width: 45px;
   min-height: 100%;
@@ -216,7 +217,7 @@
 
   width: 360px;
 
-  top: 640px;
+  top: 620px;
   left: 0;
   right: 0;
   margin-left: auto;
