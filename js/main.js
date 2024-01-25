@@ -3,8 +3,7 @@ import { films } from "./../api/films.js";
 const filmsEL = document.querySelector('.films');
 let dataFilms = films
 
-console.log('dataFilms')
-
+// Отрисовать фильмы на странице
 function showListFilms(dataFilms, genre) {
   filmsEL.innerHTML = "";
   dataFilms.forEach(film => {
@@ -21,3 +20,66 @@ function showListFilms(dataFilms, genre) {
   })
 }
 showListFilms(dataFilms);
+
+// Меню
+const menuLinkEl = document.querySelectorAll('.nav-genre__link');
+menuLinkEl.forEach(menuItem => {
+  menuItem.addEventListener('click', (e) => {
+    e.preventDefault();
+    const navGenreEl = document.querySelector('.nav-genre');
+    const dataAtr = menuItem.dataset.toDisplace;
+    console.log(dataAtr)
+    navGenreEl.style.left = dataAtr;
+
+    const genre = menuItem.textContent.trim().toLowerCase()
+
+    // Выбор категории фильма
+    function getFilterFilms(films, myGgenre) {
+      if (myGgenre) {
+        const copyDataFilms = [...films].filter(dataFilm => {
+          return dataFilm.genre.includes(myGgenre);
+        });
+        return copyDataFilms;
+      } else {
+        return dataFilms;
+      }
+    }
+
+    dataFilms = getFilterFilms(films, genre);
+    showListFilms(dataFilms);
+  })
+})
+
+const btnSearch = document.querySelector('.btn-search');
+const search = document.querySelector('.search');
+const searchInput = document.querySelector('.search__input');
+
+btnSearch.addEventListener('click', function (e) {
+  showListFilms(films);
+  e.stopPropagation();
+  search.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+  searchInput.style.width = "100%";
+  searchInput.focus();
+})
+
+window.addEventListener('click', function (e) {
+  e.stopPropagation();
+  if (e.target !== search && e.target !== btnSearch && e.target !== searchInput) {
+    search.style.backgroundColor = "";
+    searchInput.style.width = "";
+    searchInput.value = "";
+  }
+})
+
+const searchFilm = (s) => {
+  const searcFilm = films.filter(film => {
+    return film.title.toLowerCase().includes(s);
+  })
+  console.log("searcFilm:", searcFilm)
+  showListFilms(searcFilm);
+}
+
+searchInput.addEventListener('input', function () {
+  console.log('input.value: ', searchInput.value.toLowerCase())
+  searchFilm(searchInput.value.toLowerCase());
+})

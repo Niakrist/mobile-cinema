@@ -28,8 +28,6 @@
   position: relative;
 }
 
-
-
 .app::-webkit-scrollbar {
   width: 0;
 }
@@ -37,7 +35,7 @@
 .icons-group {
   width: 320px;
 
-  position: absolute;
+  position: sticky;
   top: 40px;
   left: 0;
   right: 0;
@@ -75,6 +73,7 @@
   top: 100px;
   left: 5px;
   position: sticky;
+  overflow:scroll;
   border-radius: 60px 0 0 60px;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 2;
@@ -126,7 +125,7 @@
   content: '';
   position: absolute;
   top: -50px;
-  left: -55px;
+  left: -50px;
   width: 45px;
   min-height: 100%;
   background-image: url('./../img/right-bg.png');
@@ -136,7 +135,7 @@
   content: '';
   position: absolute;
   top: -50px;
-  right: -55px;
+  right: -50px;
   width: 45px;
   min-height: 100%;
   background-image: url('./../img/left-bg.png');
@@ -145,8 +144,6 @@
 .film {
   position: relative;
   margin-bottom: 10px;
-  width: 280px;
-  height: 400px;
   /* border: 1px solid red; */
   overflow: hidden;
 }
@@ -161,6 +158,8 @@
   pointer-events: none;
   object-fit: cover;
   object-position: center;
+  width: 280px;
+  height: 400px;
 }
 
 .film__img::before {
@@ -205,4 +204,31 @@
   left: 30px;
   bottom: 30px;
   pointer-events: none;
+}
+
+.main-menu {
+  position: sticky;
+
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50px;
+
+
+  width: 360px;
+
+  top: 640px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.main-menu__link.active svg,
+.main-menu__link svg:hover {
+  fill:#ffd645;
 }
