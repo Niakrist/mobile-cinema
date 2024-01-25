@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/film.js" defer type="module"></script>
+  <title>Страница фильма</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="app app-film">
+      <div class="icons-group">
+        <a href="/" class="button-back">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-chevron-left"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+          </svg>
+        </a>
+        <button class="btn-search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-heart"
+            viewBox="0 0 16 16">
+            <path
+              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+          </svg>
+        </button>
+      </div>
+      <div class="player">
+        <img class="player__img" src="./img/001.png" alt="">
+        <div class="player-gradinet"></div>
+        <div class="play">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-play-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
+          </svg>
+        </div>
+        <div class="player__genre">
+          <img src="./img/film.svg" alt="">
+          <span>боевик<span>
+        </div>
+        <h2 class="player__title">
+          Криминальное чтиво
+        </h2>
+        <div class="player__info">
+          <div class="player__info-imdb">IMDB 7.6</div>
+          <div class="player__info-time">2ч 40м</div>
+          <div class="player__info-date">October 21.2022</div>
+        </div>
+      </div>
+      <div class="film-tabs">
+        <button class="film-tab active">О фильме</button>
+        <button class="film-tab">Актеры</button>
+        <button class="film-tab">Фотографии</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
