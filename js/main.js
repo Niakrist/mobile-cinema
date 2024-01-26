@@ -100,3 +100,11 @@ const getNewFilmPage = () => {
 getNewFilmPage();
 
 
+
+if (localStorage.getItem('heart')) {
+  const heartQuantity = document.querySelector('.btn-heart__quantity');
+  const localStorageHeart = JSON.parse(localStorage.getItem('heart'));
+  localStorageHeart.length > 0 ? heartQuantity.textContent = localStorageHeart.length : heartQuantity.textContent = '';
+  const biBell = document.querySelector('.bi-bell');
+  localStorageHeart.length ? biBell.style.fill = '#ffd645' : biBell.style.fill = ''
+}

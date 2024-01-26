@@ -13,7 +13,7 @@
 
 <body>
   <div class="wrapper">
-    <div class="app-film">
+    <div class="app app-film">
       <div class="icons-group">
         <a href="/" class="button-back">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-chevron-left"
@@ -22,7 +22,7 @@
               d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
           </svg>
         </a>
-        <button class="btn-search">
+        <button class="btn-heart">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-heart"
             viewBox="0 0 16 16">
             <path
@@ -58,6 +58,44 @@
         <button class="film-tab">Актеры</button>
         <button class="film-tab">Фотографии</button>
       </div>
+      <div class="film-tab__wrapper">
+        <div class="film-tab__about film-tab__item" data-tab="0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fugit laudantium laboriosam alias facilis qui
+          assumenda nesciunt. Sed iste error aperiam maiores, voluptatem at ullam, enim alias debitis quisquam
+          quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fugit laudantium laboriosam alias facilis qui
+          assumenda nesciunt. Sed iste error aperiam maiores, voluptatem at ullam, enim alias debitis quisquam
+          quibusdam.  
+        </div>
+        <div class="film-tab__cast film-tab__item hidden" data-tab="1">
+          <div class="cast">
+            <div class="cast__img">
+              <img src="./img/sasa.jpg" alt="">
+            </div>
+            <div class="cast__title">Саша</div>
+          </div>
+          <div class="cast">
+            <div class="cast__img">
+              <img src="./img/sasa.jpg" alt="">
+            </div>
+            <div class="cast__title">Саша</div>
+          </div>
+
+        </div>
+        <div class="film-tab__photo film-tab__item hidden" data-tab="2">
+
+          <div class="photo">
+            <img src="./img/sasa.jpg" alt="">
+          </div>
+          <div class="photo">
+            <img src="./img/sasa.jpg" alt="">
+          </div>
+          <div class="photo">
+            <img src="./img/sasa.jpg" alt="">
+          </div>
+          
+        </div>
+      </div>
+      <button class="film-reserve">Забронировать билет</button>
     </div>
   </div>
 </body>
