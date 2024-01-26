@@ -86,6 +86,14 @@
   margin-bottom: 15px;
 }
 
+.heart-item__empty {
+  padding: 40px 20px;
+  text-align: center;
+  color: #ffd645;
+  font-size: 14px;
+  font-size: 18px;
+}
+
 .heart-item__link {
   flex-grow: 1;
   color: #ffd645;
@@ -376,7 +384,7 @@ svg {
   position: absolute;
   left: 20px;
   bottom: 100px;
-  font-size: 30px;
+  font-size: 24px;
   color: #fff;
 }
 
