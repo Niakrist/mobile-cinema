@@ -60,6 +60,43 @@
   font-size: 12px;
 }
 
+.heart-list {
+  position: fixed  ;
+  padding: 10px;
+  width: 340px;
+  border-radius: 10px;
+  top: 140px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  
+}
+
+.heart-list--none {
+  display: none;
+}
+
+.heart-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.heart-item__link {
+  flex-grow: 1;
+  color: #ffd645;
+  font-size: 14px;
+}
+
+.heart-item__img {
+  width: 40px;
+  margin-right: 15px;
+}
+
 .search {
   display: flex;
   align-items: center;
@@ -246,7 +283,9 @@
   fill: #ffd645;
 }
 
-
+svg {
+  pointer-events: none;
+}
 
 /* PAGE FILM*/
 

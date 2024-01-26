@@ -6,7 +6,10 @@ export const films = [
     imdb: "7.0",
     time: 116,
     date: "01.01.2024",
-    poster: "https://avatars.mds.yandex.net/get-kinopoisk-image/10592371/de03e962-cea1-43e0-801b-249704a5ebbb/300x450"
+    poster: "https://avatars.mds.yandex.net/get-kinopoisk-image/10592371/de03e962-cea1-43e0-801b-249704a5ebbb/300x450",
+    description: "Трубадур и его друзья-самозванцы — Пес, Кошка, Осел и самовлюбленный Петух — объединились, чтобы совершить подвиг. Бродячие музыканты во главе с новым лидером снова сплотятся, чтобы вернуть смех и радость на мрачные улицы Бремена. Прежде всего они должны рассмешить дочь Короля, но встреча с Принцессой грозит опасным приключением. Против Трубадура и его друзей — коварные враги, интриги и ловушки, но за любовь надо сражаться. А тут еще Принцесса сбежала из дворца. В одном клубке — преступные схемы Разбойников, интриги Сыщика, капризы и тайны королевской семейки, но веселые музыканты с неутомимым Трубадуром заставят всех плясать под свою дудку. На что готовы Бременские музыканты ради подвига?",
+    cast: ["Тихон Жизневский", "Валентина Ляпина", "Роман Курцын", "Аскар Нигамедзянов", "Ирина Горбачёва", "Дмитрий Дюжев", "Сергей Бурунов", "Мария Аронова", "Константин Хабенский", "Юлия Пересильд"],
+    gallery: ["https://avatars.mds.yandex.net/get-kinopoisk-image/10893610/afdb59c9-3363-412b-bcc6-08bf4ebf914a/x252", "https://avatars.mds.yandex.net/get-kinopoisk-image/10893610/3e88c208-a8b8-4443-a143-838084a5cfcf/x178", "https://avatars.mds.yandex.net/get-kinopoisk-image/10900341/7d448b60-cae0-46fe-bb50-aad7bdc999d7/x252", "https://avatars.mds.yandex.net/get-kinopoisk-image/9784475/570fe5f3-89ae-45f9-a24b-8eaa3b910858/x252", "https://avatars.mds.yandex.net/get-kinopoisk-image/9784475/2af98f7e-82c7-420e-8930-68cec501a7f8/x252", "https://avatars.mds.yandex.net/get-kinopoisk-image/9784475/9cb48ffa-120e-433f-833d-f3861ce27e3c/x178", "https://avatars.mds.yandex.net/get-kinopoisk-image/9784475/01ab695a-a452-466d-b043-e61cb3b18246/x178", "https://avatars.mds.yandex.net/get-kinopoisk-image/9784475/f3fd1450-3758-43d7-9450-35289b0a7f87/x178"]
   },
   {
     id: 2,
